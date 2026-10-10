@@ -1,0 +1,25 @@
+{
+  "name": "sentarys",
+  "version": "0.1.0",
+  "description": "Sentarys from the terminal: clip podcasts and links into Shorts, check credits, download 1080p clips and post them to social accounts.",
+  "type": "module",
+  "bin": { "sentarys": "dist/src/cli.js" },
+  "files": ["dist/src", "README.md", "LICENSE"],
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": ["sentarys", "video", "shorts", "clips", "podcast", "captions", "cli", "ai", "agents", "mcp"],
+  "author": "Sentarys Team <contact@sentarys.com> (https://sentarys.com)",
+  "license": "MIT",
+  "homepage": "https://sentarys.com/docs/agents",
+  "repository": { "type": "git", "url": "git+https://github.com/Accelar-labs/sentarys-cli.git" },
+  "bugs": { "url": "https://github.com/Accelar-labs/sentarys-cli/issues" },
+  "publishConfig": { "access": "public" },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.7.0"
+  }
+}
